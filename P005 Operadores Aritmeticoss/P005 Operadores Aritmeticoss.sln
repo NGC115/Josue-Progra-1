@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P005 Operadores Aritmeticoss", "P005 Operadores Aritmeticoss.vcxproj", "{F8ECD268-A71D-489E-8B33-39C8F1639E80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Debug|x64.ActiveCfg = Debug|x64
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Debug|x64.Build.0 = Debug|x64
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Debug|x86.ActiveCfg = Debug|Win32
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Debug|x86.Build.0 = Debug|Win32
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Release|x64.ActiveCfg = Release|x64
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Release|x64.Build.0 = Release|x64
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Release|x86.ActiveCfg = Release|Win32
+		{F8ECD268-A71D-489E-8B33-39C8F1639E80}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {781A2C8E-514C-493A-84DC-5A6A4235F918}
+	EndGlobalSection
+EndGlobal
