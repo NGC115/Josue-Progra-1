@@ -1,19 +1,89 @@
-// P017 Matrices.cpp : Este archivo contiene la funci√≥n "main". La ejecuci√≥n del programa comienza y termina ah√≠.
+// P017 Matrices.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-
-
 #include <iostream>
-#include <random>
+#include <cstdlib>
+#include <ctime>
 
 int main()
 {
-    int matriz[3][3];
-    
-    
+    // Matriz 2x3
+    int matriz2x3[2][3];
+
+    std::cout << "Ingrese los datos para la matriz 2x3:\n";
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            std::cout << "Ingrese el dato para la posiciÛn [" << i << "][" << j << "]: ";
+            std::cin >> matriz2x3[i][j];
+        }
+    }
+
+    std::cout << "Matriz 2x3:\n";
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            std::cout << "[" << i << "][" << j << "]: " << matriz2x3[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    // Matriz din·mica de tamaÒo n*m
+    int filas, columnas;
+    std::cout << "Ingrese el n˙mero de filas: ";
+    std::cin >> filas;
+    std::cout << "Ingrese el n˙mero de columnas: ";
+    std::cin >> columnas;
+
+    int** matrizDinamica = new int* [filas];
+    for (int i = 0; i < filas; i++)
+    {
+        matrizDinamica[i] = new int[columnas];
+    }
+
+    if (filas > 3 || columnas > 3)
+    {
+        std::cout << "Se generar·n datos aleatorios para la matriz.\n";
+        std::srand(std::time(0));
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {
+                matrizDinamica[i][j] = std::rand() % 10;  // Generar un n˙mero aleatorio entre 0 y 9
+            }
+        }
+    }
+    else
+    {
+        std::cout << "Ingrese los datos para la matriz:\n";
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {
+                std::cout << "Ingrese el dato para la posiciÛn [" << i << "][" << j << "]: ";
+                std::cin >> matrizDinamica[i][j];
+            }
+        }
+    }
+
+    std::cout << "Matriz:\n";
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            std::cout << "[" << i << "][" << j << "]: " << matrizDinamica[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    // Liberar memoria
+    for (int i = 0; i < filas; i++)
+    {
+        delete[] matrizDinamica[i];
+    }
+    delete[] matrizDinamica;
+
+    return 0;
 }
-
-
-    
-
-    
